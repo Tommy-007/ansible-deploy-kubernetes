@@ -129,7 +129,7 @@ all:
     is_mutil_master: yes
     # 多 Master 架构时会使用 Nginx 来四层代理多个 Master 中的 APIServer，Nginx 四层代理可能有多个，这多个代理之间使用 Keepalived 提供 VIP 进行高可用，该字段就是用来设置该 VIP
     virtual_ip: 10.0.1.200
-    # Keepalived VIP 绑定的网卡，如果多个主机网卡名不同，则可定义在对应的主机变量下
+    # Keepalived VIP 绑定的网卡，如果多个主机网卡名不同，则可定义在对应的主机变量下. 查看网卡名：cat /proc/net/dev|grep -E "eth|ens"|awk -F'[ :]' '{print $2}'
     virtual_ip_device: eth0
     # Service 网络网段，默认为 10.0.0.0/24
     service_net: 10.0.0.0/24
