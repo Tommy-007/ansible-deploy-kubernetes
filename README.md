@@ -29,7 +29,7 @@
 
 ### 离线二进制包下载
 
-链接：https://pan.baidu.com/s/1uJwhrINaO-SlTYSjeVOktw  提取码：`q3n1`。
+链接：https://pan.baidu.com/s/1a9k5jQ-r-MEbuwNqLO0kXA?pwd=9s9o
 
 该链接提供的下载目录结构如下：
 
