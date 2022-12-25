@@ -221,8 +221,8 @@ all:
     ansible_ssh_pass: root1234
     ansible_sudo_pass: root1234
     is_mutil_master: yes
-    virtual_ip: 10.0.1.200
-    virtual_ip_device: eth0
+    virtual_ip: 192.168.3.111
+    virtual_ip_device: ens33
     proxy_master_port: 7443
     install_dir: /opt/apps/
     package_dir: /opt/packages/
@@ -238,21 +238,21 @@ all:
     ingress_controller_type: haproxy
     cni_type: flannel
   hosts:
-    10.0.1.201:
+    192.168.3.56:
       hostname: k8s-master1
       master: yes
       node: yes
       etcd: yes
       proxy_master: yes
       proxy_priority: 110
-    10.0.1.202:
+    192.168.3.57:
       hostname: k8s-master2
       master: yes
       node: yes
       etcd: yes
       proxy_master: yes
       proxy_priority: 100
-    10.0.1.203: 
+    192.168.3.58: 
       hostname: k8s-node1
       etcd: yes
       node: yes
